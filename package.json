@@ -7,7 +7,7 @@
     "build-css": "sass --load-path=node_modules src:dist --style=compressed",
     "watch-css": "npm run build-css && sass --watch --load-path=node_modules src:dist --style=compressed",
     "build-js": "esbuild src/index.ts --tsconfig=tsconfig.esbuild.json --bundle --minify --format=esm --outfile=dist/index.js",
-    "build": "npm run build-css && npm run build-js && cp src/index.html dist/index.html",
+    "build": "npm run build-css && npm run build-js && cp index.html dist/index.html",
     "start": "npm run build && node index.js"
   },
   "repository": {
