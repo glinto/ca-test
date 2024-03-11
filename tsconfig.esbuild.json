@@ -1,0 +1,10 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"paths": {
+			"vue": [
+				"./node_modules/vue/dist/vue.esm-bundler.js"
+			]
+		}
+	}
+}
